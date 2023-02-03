@@ -33,4 +33,4 @@ $ terraform destroy
 
 | Name    | Description |
 |---------|-------------|
-| [basic-ec2-instance]() | Basic EC2 instance |
+| [basic-ec2-instance](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/1.simple-ec2) | Basic EC2 instance |
