@@ -81,25 +81,38 @@ resource "aws_security_group" "dev_public-sg" {
   name        = "public_sg"
   description = "security group for public"
   vpc_id = aws_vpc.dev.id
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
 
- ingress {
+  ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description      = "HTTPS"
+    from_port        = 443
+    to_port          = 443
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  ingress {
+    description      = "HTTP"
+    from_port        = 80
+    to_port          = 80
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
   egress {
-    from_port   = 0
-    to_port     = 65535
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    from_port        = 0
+    to_port          = 65535
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
   }
 
   tags= {
@@ -137,7 +150,6 @@ resource "aws_key_pair" "terraform_keys" {
 
 # -------------------------------------------------
 
-
 # Creating EC2 instances in public subnets
 resource "aws_instance" "public_inst_1" {
   ami           = "ami-0aa7d40eeae50c9a9"
@@ -150,6 +162,15 @@ resource "aws_instance" "public_inst_1" {
     Name = "public_inst_1"
   }
 
+  user_data = <<EOF
+		#!/bin/bash
+		yum update -y
+		yum install -y httpd.x86_64
+		systemctl start httpd.service
+		systemctl enable httpd.service
+		echo "Hello World (1) from $(hostname -f)" > /var/www/html/index.html
+	EOF
+
   depends_on = [
     aws_key_pair.terraform_keys
   ]
@@ -160,11 +181,19 @@ resource "aws_instance" "public_inst_2" {
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.dev-public-2.id}"
   key_name = "terraform"
-  # security_groups= [aws_security_group.dev_public-sg.name]
   vpc_security_group_ids = [aws_security_group.dev_public-sg.id]
   tags = {
     Name = "public_inst_2"
   }
+
+  user_data = <<EOF
+		#!/bin/bash
+		yum update -y
+		yum install -y httpd.x86_64
+		systemctl start httpd.service
+		systemctl enable httpd.service
+		echo "Hello World (2) from $(hostname -f)" > /var/www/html/index.html
+	EOF
 
   depends_on = [
     aws_key_pair.terraform_keys
