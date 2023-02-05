@@ -34,3 +34,4 @@ $ terraform destroy
 | Name    | Description |
 |---------|-------------|
 | [basic-ec2-instance](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/1.simple-ec2) | Basic EC2 instance |
+| [vpc-2subnets-igw](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/2.vpc-2subnets-igw) | 1 VPC with 2 public subnets and 1 IGW|
