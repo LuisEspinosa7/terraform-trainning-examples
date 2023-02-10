@@ -27,22 +27,10 @@ $ terraform destroy
 <table style="width:100%">
   <tr>
     <td>
-  	<img width="450" alt="Image" src="">
+  	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218000390-80f403c7-3589-4828-bd7b-403456256611.png">
     </td>
     <td>
-  	<img width="450" alt="Image" src="">
-    </td>
-  </tr>
-</table>
-
-
-<table style="width:100%">
-  <tr>
-    <td>
-  	<img width="450" alt="Image" src="">
-    </td>
-    <td>
-  	<img width="450" alt="Image" src="">
+  	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218000399-decc62e0-4824-4681-b106-dc712f2f5e9c.png">
     </td>
   </tr>
 </table>
@@ -51,19 +39,10 @@ $ terraform destroy
 <table style="width:100%">
   <tr>
     <td>
-  	<img width="450" alt="Image" src="">
+  	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218000411-9fb1fdc3-12b6-46c7-99db-39f82356cc6e.png">
     </td>
     <td>
-  	<img width="450" alt="Image" src="">
-    </td>
-  </tr>
-</table>
-
-
-<table style="width:100%">
-  <tr>
-    <td>
-  	<img width="450" alt="Image" src="">
+  	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218000425-19c02c43-2075-4a2b-a61c-ce79b1441f82.png">
     </td>
   </tr>
 </table>
