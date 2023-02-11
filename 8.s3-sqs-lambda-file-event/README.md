@@ -79,5 +79,8 @@ $ terraform destroy
     <td>
   	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218275306-39225d5e-3aea-499b-934d-b5e5f557e456.png">
     </td>
+    <td>
+  	 https://youtu.be/DR00oPC8MpQ
+    </td>
   </tr>
 </table>
