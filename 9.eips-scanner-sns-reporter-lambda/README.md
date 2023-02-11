@@ -90,6 +90,8 @@ $ terraform destroy
     <td>
   	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218282031-f41edc47-fe30-48af-af0d-a1444c4743e2.png">
     </td>
+    <td>
+  	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218282444-57515905-0407-47b6-a743-0140b2c78de8.png">
+    </td>
   </tr>
 </table>
-
