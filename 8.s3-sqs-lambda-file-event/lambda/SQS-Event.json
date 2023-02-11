@@ -1,0 +1,22 @@
+{
+    "Records":[
+       {
+          "messageId":"581db230-9853-4be3-a1fe-72c9a5b3e4d4",
+          "receiptHandle":"AQEBAwV4m8sSkn5jDd1k/GBLco1znfiv+xT0KTRZdEhQE7clWhAcFlVusMR07RQsBo5ImrlIDafWwdzfX+ZqsuRQPGWE0CcsR6ga8yQTTtG6N1CpWuotJ69Ef55XILtkOMKS+7HR3Ek1oigests3bmx5eCj0QlsRR56qSpj0o1yOOLktLsUehPPTEmWmWXGGPoTc2GayxbnL6lCheolswgiMdE2u0qmbaKV6Ek3E4PyvPfzkOx8XGXIurYJCkFMGcpi0sWrus1WO+dzbm5NtOL9n8qAzjxaMyMyV+nXvy+EO1QCLu2CuX0/rhKfjoq0+txWm8tNVb27VKbwsRKrU12odmV9mbULuvKDU55CqNOMF+LZl8zdZzceegvK2wgfA8KjMmpJ5wQVWo0S8WqVpcJCKSJYhoh/XzqGde+1gQ957YR8=",
+          "body":"{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"us-east-1\",\"eventTime\":\"2021-04-26T23:25:17.884Z\",\"eventName\":\"ObjectCreated:Put\",\"userIdentity\":{\"principalId\":\"AWS:012850762433:admin\"},\"requestParameters\":{\"sourceIPAddress\":\"108.41.58.86\"},\"responseElements\":{\"x-amz-request-id\":\"74CMGJPKH3HA1G87\",\"x-amz-id-2\":\"c52dEWNgb6rNUs7MNY20ArZHLgtNFiRJIhREfnNAnlLsXHotTUvLS7InfWnkniuawxPgTlkOkTKZICwIgsbfdHDZKQvL0LcV\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"tf-s3-queue-20210426224851886600000002\",\"bucket\":{\"name\":\"amaksimov-s3-sqs-demo-bucket\",\"ownerIdentity\":{\"principalId\":\"A1W385KKD8Q319\"},\"arn\":\"arn:aws:s3:::amaksimov-s3-sqs-demo-bucket\"},\"object\":{\"key\":\"6.+Beginner%27s+Guide+to+AWS+Step+functions+-+AWS+HelloWorld+example.png\",\"size\":458757,\"eTag\":\"e1148e80d0798b0e23502cbdae1fef58\",\"sequencer\":\"0060874BE06812C89A\"}}}]}",
+          "attributes":{
+             "ApproximateReceiveCount":"1",
+             "SentTimestamp":"1619479521272",
+             "SenderId":"AIDAJHIPRHEMV73VRJEBU",
+             "ApproximateFirstReceiveTimestamp":"1619479521279"
+          },
+          "messageAttributes":{
+             
+          },
+          "md5OfBody":"7195d8d0f011fac4dc115b59d3e86797",
+          "eventSource":"aws:sqs",
+          "eventSourceARN":"arn:aws:sqs:us-east-1:012850762433:amaksimov-s3-event-notification-queue",
+          "awsRegion":"us-east-1"
+       }
+    ]
+ }

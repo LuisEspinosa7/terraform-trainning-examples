@@ -1,0 +1,8 @@
+{
+    "Service":"Amazon S3",
+    "Event":"s3:TestEvent",
+    "Time":"2021-04-27T13:57:03.224Z",
+    "Bucket":"amaksimov-s3-sqs-demo-bucket",
+    "RequestId":"MDSYJ6FFMMZ75MJ8",
+    "HostId":"bydBlxgzo+XD8x1szLD+YfeaN8DUtNoxEHsMDySKd1wuX1PKvuYx4h/Iw8uUM1wx/uImu1On5sI="
+ }
