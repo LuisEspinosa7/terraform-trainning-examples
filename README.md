@@ -40,3 +40,7 @@ $ terraform destroy
 | [lambda-apigw-zip](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/5.lambda-apigw-zip) | 1 lambda integrated with api gateway packaged in a zip. |
 | [lambda-s3-auto-zip](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/6.lambda-s3-auto-zip) | 1 lambda integrated with api gateway and s3, the lambda is automatically packaged in a zip and with every change terraform will redeploy. |
 | [lambda-s3-read](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/7.lambda-s3-read) | 1 lambda which reads a file from s3. |
+| [s3-sqs-lambda-file-event](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/8.s3-sqs-lambda-file-event) | 1 s3 bucket, 1 SQS queue and 1 lambda. Whenever a file is uploaded to the s3 bucket and event is generated to the SQS queue, then those events will be received in the lambda and processed further. |
+| [eips-scanner-sns-reporter-lambda](https://github.com/LuisEspinosa7/terraform-trainning-examples/tree/main/9.eips-scanner-sns-reporter-lambda) | 1 Event Bridge rule and 1 lambda which is responsible for monitoring all unused EIPs (not assigned to EC2 machines) and send an email through Amazon SES. |
+
+
