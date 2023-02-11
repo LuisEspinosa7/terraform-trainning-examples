@@ -46,3 +46,12 @@ $ terraform destroy
     </td>
   </tr>
 </table>
+
+
+<table style="width:100%">
+  <tr>
+    <td>
+  	<img width="450" alt="Image" src="https://user-images.githubusercontent.com/56041525/218234252-af5dd766-1626-4986-82d9-e02aca0f3f67.png">
+    </td>
+  </tr>
+</table>
